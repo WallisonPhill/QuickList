@@ -1,0 +1,29 @@
+.desktop-only {
+  display: none;
+}
+
+.container {
+
+  border: 2px solid red;
+}
+
+@media (width >= 80em) {
+  .desktop-only {
+    display: initial;
+  }
+
+  .container {
+    margin-inline: auto;
+    max-width: 40em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  & header {
+    width: 100%;
+    text-align: center;
+    & img {
+      padding-block: 1rem 2rem;
+    }
+  }
+}
