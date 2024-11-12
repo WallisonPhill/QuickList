@@ -34,8 +34,24 @@ body {
   background-color: var(--background-primary);
 }
 
-a {
-  text-decoration: none;
-  font: var(--text-link);
-  color: var(--color-brand);
+input {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: .75rem;
+  color: var(--content-tertiarty);
+  font: var(--text-p);
+  padding-inline: 1rem;
+}
+
+button {
+  background-color: var(--color-brand);
+  border-radius: .75rem;
+  color: var(--always-white);
+  font: var(--text-label);
+  padding: 0.75px 1.5rem;
+  border: none;
+}
+
+button:hover {
+  background-color: var(--color-brand-hover);
 }
