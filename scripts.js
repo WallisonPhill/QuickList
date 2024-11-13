@@ -37,3 +37,26 @@ function addProduct() {
   product.value = ''
   product.focus()
 }
+
+// Função para remover o item quando checkbox marcado e lixeira clicada
+list.addEventListener('click', function(event) {
+  var target = event.target
+
+  // Verificando se o clique foi no ícone de lixeira
+  if (target.tagName === 'IMG') {
+    var li = target.closest('li')
+    var checkbox = li.querySelector('input[type="checkbox"]');
+    
+    // Verificando se o checkbox está marcado
+    if (checkbox.checked) {
+      li.remove()
+    }
+  }
+})
+
+// Adicionando funcionalidade para adicionar item pressionando 'Enter'
+product.addEventListener('keyup', function(event) {
+  if (event.keyCode === 13) { 
+    addProduct()
+  }
+})
