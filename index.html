@@ -16,20 +16,54 @@
     <header class="desktop-only">
       <img src="./assets/images/logo.png" alt="Logo QuickList">
     </header>
+    
+    <div class="icons-list container">
+      <div class="icons">
+        <a href="#" id="home"> <img src="./assets/icons/home.svg" alt="icone home"></a>
+        <a href="#" id="list"> <img src="./assets/icons/list.svg" alt="icone lista"></a>
+        <a href="#" id="settings"><img src="./assets/icons/settings.svg" alt="icone settings"></a>
+        <a href="#" id="delete"> <img src="./assets/icons/delete.svg" alt="icone delete"></a>
+      </div>
+    </div>
 
-    <section class="list">
+    <section class="list container">
       <a href="#">
         <img src="./assets/icons/arrow.svg" alt="Seta Voltar">
       </a>
 
       <h1>Compras da semana</h1>
 
-      <section class="add-item">
+      <div class="add-item">
         <input type="text" id="item" name="item" placeholder="Adicione um novo item">
         <button type="submit" id="btn-add" name="btn-add">Adicionar item</button>
-      </section>
+      </div>
 
+      <ul class="items" role="list">
+        <li>
+          <input type="checkbox">
+          <span>Arroz</span>
+          <a href="#">
+            <img src="./assets/icons/erase.svg" alt="icone de deletar">
+          </a>
+        </li>
+        <li>
+          <input type="checkbox">
+          <span>Feijão</span>
+          <a href="#">
+            <img src="./assets/icons/erase.svg" alt="icone de deletar">
+          </a>
+        </li>
+
+        <li>
+          <input type="checkbox">
+          <span>Feijão</span>
+          <a href="#">
+            <img src="./assets/icons/erase.svg" alt="icone de deletar">
+          </a>
+        </li>
+      </ul>
     </section>
+
   </main>
 </body>
 </html>

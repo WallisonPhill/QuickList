@@ -1,0 +1,20 @@
+.icons-list {
+  display: flex;
+  margin-top: .75rem;
+  padding-left: .5rem;
+  
+  & .icons {
+    display: flex;
+    gap: .75rem;
+  }
+}
+
+@media (width >= 80em) {
+  .icons-list {
+    margin-left: 0;
+
+    & .icons {
+      gap: 1rem;
+    }
+  } 
+}

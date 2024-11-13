@@ -2,11 +2,6 @@
   display: none;
 }
 
-.container {
-
-  border: 2px solid red;
-}
-
 @media (width >= 80em) {
   .desktop-only {
     display: initial;

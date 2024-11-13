@@ -1,7 +1,8 @@
 .list {
   margin-top: 1.5rem;
   padding: .5rem;
-
+  width: 100%;
+  
   & h1 {
     font: var( --text-title);
     color: var(--content-primary);
@@ -24,7 +25,15 @@
   } 
 }
 
-  @media (width >= 80em) {
+.items {
+  margin-top: 2rem;
+
+  & span {
+    width: 85%;
+  }
+}
+
+@media (width >= 80em) {
     
     & .add-item {
       width: 100%;
@@ -34,4 +43,4 @@
       grid-template-columns: 2fr 1fr;
       gap: .5rem;
     }
-  }
+}
